@@ -19,3 +19,9 @@ docker-compose.yml
 .vscode/
 
 uploads/
+
+backend/data/*.db
+backend/data/*.db-journal
+
+backend/uploads/images/*
+!backend/uploads/images/.gitkeep

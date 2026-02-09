@@ -16,3 +16,6 @@ backend/uploads/*
 
 # ただし、.gitkeep ファイルだけは無視しないで（Gitに上げて）
 !backend/uploads/.gitkeep
+
+backend/data/*.db
+!backend/data/.gitkeep

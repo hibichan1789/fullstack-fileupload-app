@@ -18,11 +18,11 @@ main.pyの関数をutils/file_opsに移すことでmain.pyの役割を薄くし�
 backend/uploads/ フォルダの中身は無視する  
 backend/uploads/*   
 ただし、.gitkeep ファイルだけは無視しないようにする  
-backend/uploads/.gitkeep  
+!backend/uploads/.gitkeep  
 Headerからファイルのサイズを取得できる,fastAPIが自動でヘッダーのContent-Lengthから読み取ってくれる　　
 from .フォルダ名 import ファイル名　で相対パスを使うのがモダンなやり方らしい  
 pythonがモジュールとして認識するために__init__.pyはどのディレクトリにも作成しておく  
-
+routerに切り出すとheader項目が出てしまうのでHeader(include_in_schema=False)にしておくことで入力させないようにする  
 ## docker-compose.yml作成前の動作確認
 docker build -t my-backend .  
 -t my-backend (my-backend)という名前のタグをつける,後で呼び出すときにタグがないとランダムなIDになって不便  
