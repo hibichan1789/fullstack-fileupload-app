@@ -1,0 +1,12 @@
+# --絶対あげたらだめ(セキュリティ)--
+.env
+**/.env
+
+# --python--
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+.DS_Store
+Thumbs.db
+.vscode/
