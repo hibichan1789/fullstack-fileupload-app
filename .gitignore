@@ -7,6 +7,12 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 
+# --typescript--
+node_modules/
+dist/
+dist-srr/
+
+
 .DS_Store
 Thumbs.db
 .vscode/

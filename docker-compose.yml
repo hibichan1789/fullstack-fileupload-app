@@ -15,3 +15,16 @@ services:
       - .env
       - ./backend/.env
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "${FRONTEND_PORT}:5173"
+    volumes:
+      - ./frontend:/code
+      - /code/node_modules #コンテナ内のライブラリを保護する
+    env_file:
+      - .env
+      - ./frontend/.env

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <header>
+      <h1>ファイルアップロードアプリ</h1>
+    </header>
+    <main>
+      <form enctype="multipart/form-data">
+        <div>
+          <label for="upload-file">ファイルを選択してください</label>
+          <input type="file" id="upload-file">
+        </div>
+        <div>
+          <p id="upload-status"></p>
+        </div>
+        <div>
+          <button type="submit" id="upload-button">アップロード</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; hibichan1789</p>
+    </footer>
+  </body>
+</html>
