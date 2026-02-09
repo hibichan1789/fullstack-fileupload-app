@@ -17,3 +17,5 @@ Dockerfile
 docker-compose.yml
 
 .vscode/
+
+uploads/

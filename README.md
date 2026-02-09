@@ -18,3 +18,9 @@ docker-compose up
 docker-compose up --build
 終了  
 docker-compose down  
+
+## 学んだこと　　
+backend/uploads/ フォルダの中身は無視する  
+backend/uploads/*   
+ただし、.gitkeep ファイルだけは無視しないようにする  
+!backend/uploads/.gitkeep  
