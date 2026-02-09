@@ -4,7 +4,7 @@
 起動  
 docker-compose up  
 修正を強制反映してビルドしなおすとき  
-docker-compose up --build
+docker-compose up --build  
 終了  
 docker-compose down  
 ## 工夫した点
@@ -18,7 +18,7 @@ main.pyの関数をutils/file_opsに移すことでmain.pyの役割を薄くし�
 backend/uploads/ フォルダの中身は無視する  
 backend/uploads/*   
 ただし、.gitkeep ファイルだけは無視しないようにする  
-!backend/uploads/.gitkeep  
+backend/uploads/.gitkeep  
 Headerからファイルのサイズを取得できる,fastAPIが自動でヘッダーのContent-Lengthから読み取ってくれる　　
 from .フォルダ名 import ファイル名　で相対パスを使うのがモダンなやり方らしい  
 pythonがモジュールとして認識するために__init__.pyはどのディレクトリにも作成しておく  
